@@ -1,4 +1,4 @@
-name: Update Progress Graph
+name: Update Progress Bar Chart
 
 on:
   schedule:
@@ -22,13 +22,13 @@ jobs:
       run: |
         pip install matplotlib
 
-    - name: グラフを生成
-      run: python generate_graph.py
+    - name: 棒グラフを生成
+      run: python generate_bar_chart.py
 
     - name: 生成されたグラフをコミット
       run: |
         git config --local user.name "github-actions[bot]"
         git config --local user.email "github-actions[bot]@users.noreply.github.com"
-        git add progress.png
-        git commit -m "Update progress graph"
+        git add progress_bar_chart.png
+        git commit -m "Update progress bar chart"
         git push
