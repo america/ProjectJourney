@@ -1,0 +1,34 @@
+name: Update Progress Graph
+
+on:
+  schedule:
+    - cron: "0 0 * * 1" # 毎週月曜日に実行
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: チェックアウト
+      uses: actions/checkout@v2
+
+    - name: セットアップ Python
+      uses: actions/setup-python@v2
+      with:
+        python-version: "3.x"
+
+    - name: 必要なパッケージをインストール
+      run: |
+        pip install matplotlib
+
+    - name: グラフを生成
+      run: python generate_graph.py
+
+    - name: 生成されたグラフをコミット
+      run: |
+        git config --local user.name "github-actions[bot]"
+        git config --local user.email "github-actions[bot]@users.noreply.github.com"
+        git add progress.png
+        git commit -m "Update progress graph"
+        git push
