@@ -16,7 +16,12 @@ jobs:
     - name: セットアップ Python
       uses: actions/setup-python@v2
       with:
-        python-version: "3.x"
+        python-version: "3.12" # 3.12 を指定
+
+    - name: pip をインストール
+      run: |
+        python -m ensurepip --upgrade
+        python -m pip install --upgrade pip
 
     - name: 必要なパッケージをインストール
       run: |
