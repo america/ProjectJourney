@@ -27,6 +27,15 @@ jobs:
       run: |
         pip install matplotlib
 
+    - name: SSH鍵を設定
+      env:
+        SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
+      run: |
+        mkdir -p ~/.ssh
+        echo "$SSH_PRIVATE_KEY" > ~/.ssh/id_rsa
+        chmod 600 ~/.ssh/id_rsa
+        ssh-keyscan github.com >> ~/.ssh/known_hosts
+
     - name: 棒グラフを生成
       run: python generate_bar_chart.py
 
