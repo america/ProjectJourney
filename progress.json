@@ -1,28 +1,8 @@
 {
-  "projects": [
-    {
-      "name": "オペレーティングシステム開発",
-      "progress": 20
-    },
-    {
-      "name": "カスタムIME作成",
-      "progress": 10
-    },
-    {
-      "name": "プログラミング言語の作成",
-      "progress": 5
-    },
-    {
-      "name": "Arch Linuxバックアッププロジェクト",
-      "progress": 75
-    },
-    {
-      "name": "ElasticSearchプロジェクト",
-      "progress": 15
-    },
-    {
-      "name": "ブログコメント機能の有効化",
-      "progress": 5
-    }
-  ]
+    "オペレーティングシステム開発": 20,
+    "カスタムIME作成": 10,
+    "プログラミング言語の作成": 5,
+    "Arch Linuxバックアッププロジェクト": 75,
+    "ElasticSearchプロジェクト": 15,
+    "ブログコメント機能の有効化": 5
 }
