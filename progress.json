@@ -1,8 +1,28 @@
 {
-    "OS Development": 0,
-    "Custom IME Creation": 0,
-    "Programming Language Creation": 0,
-    "Arch Linux Backup Project": 50,
-    "Scrapbox Full-Text Search": 20,
-    "Enable Blog Comment Feature": 30
+  "projects": [
+    {
+      "name": "オペレーティングシステム開発",
+      "progress": 20
+    },
+    {
+      "name": "カスタムIME作成",
+      "progress": 10
+    },
+    {
+      "name": "プログラミング言語の作成",
+      "progress": 5
+    },
+    {
+      "name": "Arch Linuxバックアッププロジェクト",
+      "progress": 75
+    },
+    {
+      "name": "ElasticSearchプロジェクト",
+      "progress": 15
+    },
+    {
+      "name": "ブログコメント機能の有効化",
+      "progress": 5
+    }
+  ]
 }
