@@ -23,6 +23,8 @@
 | **カスタムIME作成** (Custom IME Creation) | 日本語IMEの構築 (Create a custom IME for Japanese input) | 🔸 初期段階 (Initial Stage) | 🔹 基本入力機能の実装 (Consider implementing basic input features) |
 | **プログラミング言語の作成** (Programming Language Creation) | 新プログラミング言語の開発 (Develop a new programming language) | 🔸 構想段階 (Conceptual Stage) | 🔹 言語仕様の決定 (Define syntax and specifications) |
 | **Arch Linuxバックアッププロジェクト** (Arch Linux Backup Project) | mini PCバックアップ環境の構築 (Establish a backup environment on mini PC) | 🔹 中間段階 (Mid-stage) | 🔸 rsyncスクリプトの最適化と自動化 (Optimize and automate rsync script) |
+| **ElasticSearchプロジェクト** (ElasticSearch Project) | Consense内の全プロジェクトで全文検索を可能にする (Enable full-text search across all projects in Consense) | 🔸 初期段階 (Initial Stage) | 🔹 インデックス作成のテスト (Test index creation) |
+| **ブログコメント機能の有効化** (Enable Blog Comment Feature) | ブログにコメント機能を追加 (Add a comment feature to the blog) | 🔸 検討段階 (Consideration Stage) | 🔹 使用するプラグインやサービスを選定 (Select plugins or services to use) |
 
 ---
 
@@ -51,6 +53,18 @@
 - **進捗 (Progress):** rsyncスクリプトによる自動化の最適化に取り組んでいる
 - **チャレンジ (Challenges):** 異なるファイルシステム間の互換性問題
 - **次のステップ (Next Step):** バックアップスクリプトの定期テストを実施
+
+### 5. **ElasticSearchプロジェクト (ElasticSearch Project)**
+- **目標 (Goal):** Consense内の全プロジェクトで全文検索を可能にする
+- **進捗 (Progress):** 初期段階でインデックス作成をテスト中
+- **チャレンジ (Challenges):** 大量データのインデックス化とクエリ最適化
+- **次のステップ (Next Step):** パフォーマンステストを実施し、インデックス設定を微調整
+
+### 6. **ブログコメント機能の有効化 (Enable Blog Comment Feature)**
+- **目標 (Goal):** コメント機能を追加して読者の交流を促進する
+- **進捗 (Progress):** 使用するプラグインやサービスを選定中
+- **チャレンジ (Challenges):** プラグイン選定、スパム対策の実装
+- **次のステップ (Next Step):** コメント機能をテスト環境で実装し、動作確認
 
 ---
 
