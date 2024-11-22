@@ -15,6 +15,11 @@ jobs:
       with:
         persist-credentials: true
 
+    - name: 日本語フォントをインストール
+      run: |
+        sudo apt-get update
+        sudo apt-get install -y fonts-noto-cjk
+
     - name: セットアップ Python
       uses: actions/setup-python@v4
       with:
