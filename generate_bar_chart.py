@@ -1,9 +1,11 @@
 import json
 import matplotlib.pyplot as plt
 from matplotlib import rcParams
+from matplotlib import font_manager
 
-# 日本語フォントを設定 (Noto Sans JP)
-rcParams['font.family'] = 'Noto Sans JP'
+# Noto Sans JP フォントを直接指定
+font_path = "/usr/share/fonts/opentype/noto/NotoSansCJK-Regular.ttc"  # フォントのパス
+rcParams['font.family'] = font_manager.FontProperties(fname=font_path).get_name()
 
 # progress.json を読み込む
 with open("progress.json") as f:
