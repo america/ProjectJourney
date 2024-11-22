@@ -19,7 +19,7 @@ jobs:
         chmod 600 ~/.ssh/id_rsa
         eval "$(ssh-agent -s)"
         ssh-add ~/.ssh/id_rsa
-        ssh -T git@github.com
+        ssh -T git@github.com || true
 
     - name: チェックアウト
       uses: actions/checkout@v3
