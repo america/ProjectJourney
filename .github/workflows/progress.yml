@@ -10,17 +10,6 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - name: SSH 設定をデバッグ
-      env:
-        SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
-      run: |
-        mkdir -p ~/.ssh
-        echo "$SSH_PRIVATE_KEY" > ~/.ssh/id_rsa
-        chmod 600 ~/.ssh/id_rsa
-        eval "$(ssh-agent -s)"
-        ssh-add ~/.ssh/id_rsa
-        ssh -T git@github.com || true
-
     - name: チェックアウト
       uses: actions/checkout@v3
       with:
@@ -39,7 +28,6 @@ jobs:
 
     - name: 棒グラフを生成
       run: |
-        set -x
         python generate_bar_chart.py
 
     - name: 生成されたグラフをコミット
