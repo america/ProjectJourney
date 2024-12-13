@@ -28,7 +28,7 @@ Below is a horizontal bar chart showing the progress of each project:
 
 ## 🔍 Project Details
 
-For more details about each project, check out the [Project Details page](project_details.md).
+For more details about each project, check out the [Project Details page](project_details_en.md).
 
 ---
 
