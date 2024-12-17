@@ -35,6 +35,7 @@ jobs:
 
     - name: 棒グラフを生成
       run: |
+        rm -f progress_bar_chart.png  # 既存のファイルを削除
         python generate_bar_chart.py
 
     - name: 生成されたグラフをコミット
